@@ -1,0 +1,1243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DashboardsWindow</class>
+ <widget class="QMainWindow" name="DashboardsWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>HR System</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="image_resources.qrc">
+    <normaloff>:/newPrefix/fugue-icons-3.5.6/icons/user-business.png</normaloff>:/newPrefix/fugue-icons-3.5.6/icons/user-business.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 0, 0);
+font-weight:bold;
+color:rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="homeButton">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background-image: url(:/newPrefix/fugue-icons-3.5.6/icons/home-medium.png);
+background-repeat: no-repeat;
+border: 2px;
+border-style:solid;
+border-radius:6px;
+background-color:rgb(0, 0, 0);
+padding: 4px;
+color:rgb(255, 255, 255);
+border-color:rgb(81, 0, 255);
+}
+
+QPushButton:hover{
+border-bottom-color:rgb(0, 196, 113);
+}
+
+QPushButton:pressed{
+background-color:rgb(79, 79, 79)
+}</string>
+           </property>
+           <property name="text">
+            <string>Home</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="userManagementButton">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+border: 2px;
+border-style:solid;
+border-radius:6px;
+background-color:rgb(0, 0, 0);
+padding: 4px;
+color:rgb(255, 255, 255);
+border-color:rgb(81, 0, 255);
+}
+
+QPushButton:hover{
+border-bottom-color:rgb(0, 196, 113);
+}
+
+QPushButton:pressed{
+background-color:rgb(79, 79, 79)
+}</string>
+           </property>
+           <property name="text">
+            <string>User Management</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="employeeInformationButton">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+border: 2px;
+border-style:solid;
+border-radius:6px;
+background-color:rgb(0, 0, 0);
+padding: 4px;
+color:rgb(255, 255, 255);
+border-color:rgb(81, 0, 255);
+}
+
+QPushButton:hover{
+border-bottom-color:rgb(0, 196, 113);
+}
+
+QPushButton:pressed{
+background-color:rgb(79, 79, 79)
+}</string>
+           </property>
+           <property name="text">
+            <string>Employee Information</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="leaveManagementButton">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+border: 2px;
+border-style:solid;
+border-radius:6px;
+background-color:rgb(0, 0, 0);
+padding: 4px;
+color:rgb(255, 255, 255);
+border-color:rgb(81, 0, 255);
+}
+
+QPushButton:hover{
+border-bottom-color:rgb(0, 196, 113);
+}
+
+QPushButton:pressed{
+background-color:rgb(79, 79, 79)
+}</string>
+           </property>
+           <property name="text">
+            <string>Leave Management</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="logoutButton">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+border: 2px;
+border-style:solid;
+border-radius:6px;
+background-color:rgb(0, 0, 0);
+padding: 4px;
+color:rgb(255, 255, 255);
+border-color:rgb(81, 0, 255);
+}
+
+QPushButton:hover{
+border-bottom-color:rgb(0, 196, 113);
+}
+
+QPushButton:pressed{
+background-color:rgb(79, 79, 79)
+}</string>
+           </property>
+           <property name="text">
+            <string>Logout</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="currentIndex">
+          <number>3</number>
+         </property>
+         <widget class="QWidget" name="homePage">
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item alignment="Qt::AlignHCenter">
+            <widget class="QLabel" name="label_3">
+             <property name="font">
+              <font>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255, 255, 255)</string>
+             </property>
+             <property name="text">
+              <string>HUMAN RESOURCE MANAGEMENT SYSTEM</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_6">
+               <item>
+                <spacer name="verticalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item alignment="Qt::AlignLeft">
+                <widget class="QPushButton" name="page1UserManagementButton">
+                 <property name="minimumSize">
+                  <size>
+                   <width>140</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>140</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+border: 2px;
+border-style:solid;
+border-radius:6px;
+background-color:rgb(0, 0, 0);
+padding: 4px;
+color:rgb(255, 255, 255);
+border-color:rgb(81, 0, 255);
+}
+
+QPushButton:hover{
+border-bottom-color:rgb(0, 196, 113);
+}
+
+QPushButton:pressed{
+background-color:rgb(79, 79, 79)
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>User Management</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignLeft">
+                <widget class="QPushButton" name="page1EmployeeInformationButton">
+                 <property name="minimumSize">
+                  <size>
+                   <width>140</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>140</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+border: 2px;
+border-style:solid;
+border-radius:6px;
+background-color:rgb(0, 0, 0);
+padding: 4px;
+color:rgb(255, 255, 255);
+border-color:rgb(81, 0, 255);
+}
+
+QPushButton:hover{
+border-bottom-color:rgb(0, 196, 113);
+}
+
+QPushButton:pressed{
+background-color:rgb(79, 79, 79)
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Employee Information</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignLeft">
+                <widget class="QPushButton" name="page1LeaveManagementButton">
+                 <property name="minimumSize">
+                  <size>
+                   <width>140</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>140</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+border: 2px;
+border-style:solid;
+border-radius:6px;
+background-color:rgb(0, 0, 0);
+padding: 4px;
+color:rgb(255, 255, 255);
+border-color:rgb(81, 0, 255);
+}
+
+QPushButton:hover{
+border-bottom-color:rgb(0, 196, 113);
+}
+
+QPushButton:pressed{
+background-color:rgb(79, 79, 79)
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Leave Management </string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignLeft">
+                <widget class="QPushButton" name="page1EmployeeRecruitmentButton">
+                 <property name="minimumSize">
+                  <size>
+                   <width>140</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>140</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+border: 2px;
+border-style:solid;
+border-radius:6px;
+background-color:rgb(0, 0, 0);
+padding: 4px;
+color:rgb(255, 255, 255);
+border-color:rgb(81, 0, 255);
+}
+
+QPushButton:hover{
+border-bottom-color:rgb(0, 196, 113);
+}
+
+QPushButton:pressed{
+background-color:rgb(79, 79, 79)
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Employee Recruitment</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <item alignment="Qt::AlignHCenter">
+                <widget class="QLabel" name="label_4">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="image_resources.qrc">:/newPrefix/images/analytics_bluepng-removebg-preview.png</pixmap>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignHCenter">
+                <widget class="QLabel" name="label_5">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="image_resources.qrc">:/newPrefix/images/product_analytics-removebg-preview.png</pixmap>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="employeeManagementPage">
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item alignment="Qt::AlignHCenter">
+            <widget class="QLabel" name="label_2">
+             <property name="font">
+              <font>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Employee Management</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_7">
+               <item>
+                <widget class="QLabel" name="label_6">
+                 <property name="text">
+                  <string>EmpId</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="empIdField">
+                 <property name="minimumSize">
+                  <size>
+                   <width>200</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>200</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit{
+border: 4px;
+color:rgb(255, 255, 255);
+border-style : solid;
+padding-left:6px;
+border-color:rgb(0, 85, 255);
+border-radius:8px;
+}
+QLineEdit:focus{
+border-bottom-color:rgb(0, 196, 113)
+}</string>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Enter Employee ID</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_9">
+                 <property name="text">
+                  <string>EmpName</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="empNameField">
+                 <property name="minimumSize">
+                  <size>
+                   <width>200</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>200</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit{
+border: 4px;
+color:rgb(255, 255, 255);
+border-style : solid;
+padding-left:6px;
+border-color:rgb(0, 85, 255);
+border-radius:8px;
+}
+QLineEdit:focus{
+border-bottom-color:rgb(0, 196, 113)
+}</string>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Enter Employee Name</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_11">
+                 <property name="text">
+                  <string>Gender</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="genderComboBox">
+                 <property name="minimumSize">
+                  <size>
+                   <width>200</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>200</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QComboBox{
+border: 4px;
+color:rgb(255, 255, 255);
+border-style : solid;
+padding-left:6px;
+border-color:rgb(0, 85, 255);
+border-radius:8px;
+}
+QComboBox:focus{
+border-bottom-color:rgb(0, 196, 113)
+}</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_10">
+                 <property name="text">
+                  <string>Status</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="statusComboBox">
+                 <property name="minimumSize">
+                  <size>
+                   <width>200</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>200</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QComboBox{
+border: 4px;
+color:rgb(255, 255, 255);
+border-style : solid;
+padding-left:6px;
+border-color:rgb(0, 85, 255);
+border-radius:8px;
+}
+QComboBox:focus{
+border-bottom-color:rgb(0, 196, 113)
+}</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_8">
+                 <property name="text">
+                  <string>Position</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="positionComboBox">
+                 <property name="minimumSize">
+                  <size>
+                   <width>200</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>200</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QComboBox{
+border: 4px;
+color:rgb(255, 255, 255);
+border-style : solid;
+padding-left:6px;
+border-color:rgb(0, 85, 255);
+border-radius:8px;
+}
+QComboBox:focus{
+border-bottom-color:rgb(0, 196, 113)
+}</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_7">
+                 <property name="text">
+                  <string>Salary</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="salaryFIeld">
+                 <property name="minimumSize">
+                  <size>
+                   <width>200</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>200</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit{
+border: 4px;
+color:rgb(255, 255, 255);
+border-style : solid;
+padding-left:6px;
+border-color:rgb(0, 85, 255);
+border-radius:8px;
+}
+QLineEdit:focus{
+border-bottom-color:rgb(0, 196, 113)
+}</string>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Enter Salary</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_3">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QTreeView" name="employeeManagementTreeView">
+               <property name="minimumSize">
+                <size>
+                 <width>520</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <spacer name="horizontalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="addEmployeeButton">
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border: 2px;
+border-style:solid;
+border-radius:6px;
+background-color:rgb(0, 0, 0);
+padding: 4px;
+color:rgb(255, 255, 255);
+border-color:rgb(81, 0, 255);
+}
+
+QPushButton:hover{
+border-bottom-color:rgb(0, 196, 113);
+}
+
+QPushButton:pressed{
+background-color:rgb(79, 79, 79)
+}</string>
+               </property>
+               <property name="text">
+                <string>Add Employee</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="updateEmployeeButton">
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border: 2px;
+border-style:solid;
+border-radius:6px;
+background-color:rgb(0, 0, 0);
+padding: 4px;
+color:rgb(255, 255, 255);
+border-color:rgb(81, 0, 255);
+}
+
+QPushButton:hover{
+border-bottom-color:rgb(0, 196, 113);
+}
+
+QPushButton:pressed{
+background-color:rgb(79, 79, 79)
+}</string>
+               </property>
+               <property name="text">
+                <string>Update Employee</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="deleteEployeeButton">
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border: 2px;
+border-style:solid;
+border-radius:6px;
+background-color:rgb(0, 0, 0);
+padding: 4px;
+color:rgb(255, 255, 255);
+border-color:rgb(81, 0, 255);
+}
+
+QPushButton:hover{
+border-bottom-color:rgb(0, 196, 113);
+}
+
+QPushButton:pressed{
+background-color:rgb(79, 79, 79)
+}</string>
+               </property>
+               <property name="text">
+                <string>Delete Employee</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="employeeInformationPage">
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item alignment="Qt::AlignHCenter">
+            <widget class="QLabel" name="label_12">
+             <property name="font">
+              <font>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Employee Information</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="searchField">
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+background-image: url(:/newPrefix/fugue-icons-3.5.6/icons/magnifier-left.png);
+background-repeat: no-repeat;
+background-position: right;
+border: 2px;
+color:rgb(255, 255, 255);
+border-style : solid;
+padding:4px;
+border-color:rgb(0, 85, 255);
+border-radius:8px;
+}
+QLineEdit:focus{
+border-bottom-color:rgb(0, 196, 113)
+}</string>
+             </property>
+             <property name="placeholderText">
+              <string>Search</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTreeView" name="employeeInfoTreeView"/>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="leaveManagamentPage">
+          <layout class="QVBoxLayout" name="verticalLayout_10">
+           <item alignment="Qt::AlignHCenter">
+            <widget class="QLabel" name="label_13">
+             <property name="font">
+              <font>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Leave Management</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_9">
+               <item>
+                <widget class="QLabel" name="label_15">
+                 <property name="text">
+                  <string>Status</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="leavePageStatusComboBox">
+                 <property name="styleSheet">
+                  <string notr="true">QComboBox{
+border: 4px;
+color:rgb(255, 255, 255);
+border-style : solid;
+padding-left:6px;
+border-color:rgb(0, 85, 255);
+border-radius:8px;
+}
+QComboBox:focus{
+border-bottom-color:rgb(0, 196, 113)
+}</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_14">
+                 <property name="text">
+                  <string>Days</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="leaveDaysSpinBox">
+                 <property name="styleSheet">
+                  <string notr="true">QSpinBox{
+border: 4px;
+color:rgb(255, 255, 255);
+border-style : solid;
+padding-left:6px;
+border-color:rgb(0, 85, 255);
+border-radius:8px;
+}
+QSpin
+Box:focus{
+border-bottom-color:rgb(0, 196, 113)
+}</string>
+                 </property>
+                 <property name="maximum">
+                  <number>60</number>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_4">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QTreeView" name="leaveTreeView"/>
+             </item>
+            </layout>
+           </item>
+           <item alignment="Qt::AlignHCenter">
+            <widget class="QPushButton" name="leavePageUpdateButton">
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+border: 2px;
+border-style:solid;
+border-radius:6px;
+background-color:rgb(0, 0, 0);
+padding: 4px;
+color:rgb(255, 255, 255);
+border-color:rgb(81, 0, 255);
+}
+
+QPushButton:hover{
+border-bottom-color:rgb(0, 196, 113);
+}
+
+QPushButton:pressed{
+background-color:rgb(79, 79, 79)
+}</string>
+             </property>
+             <property name="text">
+              <string>Update Employee</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="image_resources.qrc"/>
+  <include location="C:/Users/USER/.designer/backup/image_resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>page1UserManagementButton</sender>
+   <signal>clicked()</signal>
+   <receiver>stackedWidget</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>98</x>
+     <y>253</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>316</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>page1EmployeeInformationButton</sender>
+   <signal>clicked()</signal>
+   <receiver>stackedWidget</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>98</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>316</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>page1LeaveManagementButton</sender>
+   <signal>clicked()</signal>
+   <receiver>stackedWidget</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>98</x>
+     <y>345</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>316</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>employeeInformationButton</sender>
+   <signal>clicked()</signal>
+   <receiver>stackedWidget</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>524</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>316</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>leaveManagementButton</sender>
+   <signal>clicked()</signal>
+   <receiver>stackedWidget</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>661</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>316</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>userManagementButton</sender>
+   <signal>clicked()</signal>
+   <receiver>stackedWidget</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>391</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>316</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>logoutButton</sender>
+   <signal>clicked()</signal>
+   <receiver>DashboardsWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>755</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>homeButton</sender>
+   <signal>clicked()</signal>
+   <receiver>stackedWidget</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>58</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>316</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
