@@ -1,0 +1,12 @@
+project by:
+
+Nicholas Kamau Njano
+Daisy Lopez Adhiambo
+Evans Kiprop Kosgei
+
+under supervision of:
+
+Dr A.Waliaro
+
+source files can be found at:
+	https://github.com/Nicknjano/HR_system_v2
